@@ -31,7 +31,18 @@ Náplň lekcí
 Termíny jednotlivých lekcí
 --------------------------
 
-Kurz probíhá typicky jednou týdně. Pro každý běh kurzu budou upřesněna konkrétní data jednotlivých lekcí.
+Kurz probíhá jednou týdně, vždy v úterý od 18.00 do 20.30, a to v následujících datech:
+
+* 6. 3. 2018
+* 13. 3. 2018
+* 20. 3. 2018
+* 27. 3. 2018
+* 3. 4. 2018
+* 10. 4. 2018
+* 17. 4. 2018
+* 24. 4. 2018
+* 15. 5. 2018
+* 22. 5. 2018
 
 Je opravdu důležité, abyste mohly přijít na všechny hodiny.
 
@@ -39,3 +50,10 @@ Druhou zásadní podmínkou jsou domácí úkoly. Budete dostávat domácí úko
 lekce (ve čtvrtek večer) bude třeba věnovat kurzu ještě několik hodin, například o víkendu. Domácí úkoly se ukázaly jako
 nejefektivnější způsob, jak se látku naučit. Máte čas s Javou pořádně experimentovat, řešit problémy a musíte si s nimi
 poradit. Je dokonce možné řešit úkoly ve dvojici. My vám rádi pomůžeme přes Facebook, Skype, osobně...
+
+Google Drive
+------------
+
+Některé další informace se nacházejí [ve sdílené složce na Google
+Drive](https://drive.google.com/drive/folders/1xyZ5XgiMXZw1ogwpyeeSBoVNcL1fcvJl). Do této složky budete rovněž nahrávat
+svá řešení domácích úkolů.
