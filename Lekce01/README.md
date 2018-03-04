@@ -41,7 +41,8 @@ Druhá, lehčí verze, je přepsat ji z následující fotky. Snažte se to ale 
 ### Odevzdání domácího úkolu
 
 Domácí úkol (složku s projektem **20-Bublanina-Zadani-v2.11**) zabalte pomocí 7-Zipu pod jménem
-**Ukol01-Vase_Jmeno.7z**. (Případně lze použít prostý zip, například na Macu). Takto vytvořený archív nahrajte na Google Drive do složky Ukol01.
+**Ukol01-Vase_Jmeno.7z**. (Případně lze použít prostý zip, například na Macu). Takto vytvořený archív nahrajte na Google
+Drive do složky [Úkol 01](https://drive.google.com/drive/folders/1X1aixdNnGl1OQumZAahP5k_npaEbU1-O).
 
 Pokud byste chtěly odevzdat revizi úkolu (např. po opravě), zabalte ji a nahrajte ji na stejný Google Drive znovu, jen
 tentokrát se jménem **Ukol01-Vase_Jmeno-verze2.7z**.
