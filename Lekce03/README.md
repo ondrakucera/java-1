@@ -16,104 +16,49 @@ Metody II a želva Žofka
 Na YouTube se můžete podívat na [záznam z lekce](https://www.youtube.com/watch?v=yUa4Aq46DQI),
 případně si prohlédnout [celý playlist](https://www.youtube.com/playlist?list=PLUVJxzuCt9AROpKl3Hu-DvdgQV-xHaoQY).
 
-Úkol - Metody se vstupními hodnotami
-------------------------------------
+Úkol - Želva Žofka
+------------------
 
 ### Část 1
 
-Nejprve vytvořte metody na kreslení základních tvarů: Rovnoramenného trojúhelníku, čtverce, obdelníku a kolečka.
+Nejprve předělejte nebo dodělejte program z hodiny. Konkrétně obrazce domečku a prasátka. Vytvořte metodu
+**nakresliDomecek()** a zavolejte ji v hlavním programu. Podobně, jak jsme to dělali v hodině s metodou
+**nakresliHvezdicku()**. Dále vytvořte metodu **nakresliPrasatko()**, která bude pro svoje účely volat
+**nakresliDomecek()** a dokreslí nožičky (jako bonus můžete dokreslit i ocásek).
+
+<img src="../Lekce02/ukol02-domecek.svg" height="200" />
+
+<img src="../Lekce02/ukol02-prasatko.svg" width="200" />
 
 ### Část 2
 
-Budeme potřebovat, aby základní tvary neměly velikosti stran napevno, ale aby se jejich velikost dala nastavit. Upravíme
-metody tak, aby přijímaly tzv. vstupní parametry. Níže je vidět ukázka metody **nakresliRovnostrannyTrojuhelnik()**,
-která přijímá jako vstupní parametr **velikostStrany** typu **double**. Navenek je potřeba metodu zavolat s nějakou
-hodnotou, uvnitř metody se **velikostStrany** chová jako proměnná (proto musí mít definovaný typ, např. **double**).
+Nakreslete několik obrazců podle obrázků níže. Pro každý obrázek vytvořte metodu a případně uvnitř volejte další
+metody.
 
-    public void run() {
-        zofka.setLocation(100.0, 100.0);
-        // Volani metody, do ktere se preda hodnota 10
-        nakresliRovnostrannyTrojuhelnik(50.0);
-        zofka.setLocation(300.0, 100.0);
-        // Volani metody, do ktere se preda hodnota 15
-        nakresliRovnostrannyTrojuhelnik(70.0);
-    }
+<img src="../Lekce02/ukol02-osmiuhelnik.svg" width="100" />
 
-    public void nakresliRovnostrannyTrojuhelnik(double velikostStrany) {
-        // Zde lze používat proměnnou velikostStrany.
-        // Jeji hodnota je podle toho, jak byla metoda zavolana
-        // napr.
-        zofka.move(velikostStrany);
-        zofka.turnLeft(120.0);
-        zofka.move(velikostStrany);
-        zofka.turnLeft(120.0);
-        zofka.move(velikostStrany);
-        zofka.turnLeft(120.0);
-    }
+<img src="../Lekce02/ukol02-kolecko.svg" height="100" />
 
-Metoda může přijímat i více parametrů za sebou (oddělujeme čárkou):
-
-    public void run() {
-        Color cervenaBarva;
-        cervenaBarva = new Color(255, 0, 0);
-
-        zofka.setLocation(100.0, 100.0);
-        // Volani metody, do ktere se preda hodnota 10 a objekt, ktery je v promenne cervenaBarva
-        nakresliBarevnyRovnostrannyTrojuhelnik(50.0, cervenaBarva);
-
-        zofka.setLocation(300.0, 100.0);
-        // Volani metody, do ktere se preda hodnota 15 a nove vytvoreny objekt barvy
-        nakresliBarevnyRovnostrannyTrojuhelnik(70.0, new Color(0, 0, 255));
-    }
-
-    public void nakresliBarevnyRovnostrannyTrojuhelnik(double velikostStrany, Color barvaCary) {
-        // Zde lze používat proměnnou velikostStrany a barva:
-        zofka.setPenColor(barvaCary);
-        zofka.move(velikostStrany);
-        zofka.turnLeft(120.0);
-        zofka.move(velikostStrany);
-        zofka.turnLeft(120.0);
-        zofka.move(velikostStrany);
-        zofka.turnLeft(120.0);
-    }
-
-Parametrizujte metody na kreslení rovnoramenného trojuhelníku, čtverce, obdelníku a kolečka. Metody by měly přijímat
-jako vstupní parametr velikost strany (typu double). V případě trojúhelníku ještě úhel mezi rameny. V případě obdelníku
-budou nutné dva parametry (strana A, strana B). V případě kolečka se bude předávat velikost kolečka (způsob nechám na
-vás).
-
-Pokud chcete, jako bonus můžou metody přijímat i barvu kreslení. Není to ale povinné.
-
-Pokud byste chtěli vypočítat, jak má být dlouhá třetí strana rovnoramenného trojúhelníku, pokud znáte délku ramene a
-úhel mezi rameny, ušetřím vás googlení analytické geometrie. Zde je metoda, která délku třetí strany vypočítá. V hodině
-jsme si ukazovali, jak vypadá metoda, která vrací nějaký výstup. V tomto případě jde o kombinaci jak vstupních
-parametrů, tak výstupu.
-
-    public double vypocitejDelkuTretiStrany(double velikostRamene, double uhelMeziRameny) {
-        double tretiStrana;
-        tretiStrana = Math.abs((velikostRamene
-                * Math.sin((uhelMeziRameny * Math.PI / 180) / 2.0))
-                * 2.0);
-        return tretiStrana;
-    }
+<img src="../Lekce02/ukol02-slunicko.svg" height="150" />
 
 ### Část 3
 
-Pomocí metod výše nakreslete následující obrázky (zmrzlinu, sněhuláka a mašinku).
+Nakreslete kompozici podle obrázku níže.
 
-<img src="ukol03-zmrzlina.svg" width="100" />
+<img src="../Lekce02/ukol02-vesnice.svg" height="500" />
 
-<img src="ukol03-snehulak.svg" height="300" />
+### Část 4
 
-<img src="ukol03-lokomotiva.svg" height="150" />
+Pomocí želvy nakreslete svoje křestní jméno. Na každé písmeno vytvořte samostatnou metodu.
 
 ### Odevzdání domácího úkolu
 
-Domácí úkol (složku s projektem **90-Turtle-Parametrizovane_metody**) zabalte pomocí 7-Zipu pod jménem
-**Ukol03-Vase_Jmeno.7z**. (Případně lze použít prostý zip, například na Macu). Takto vytvořený archív nahrajte na Google
-Drive do složky Ukol03.
+Domácí úkol (složku s projektem **20-Turtle**) zabalte pomocí 7-Zipu pod jménem **Ukol03-Vase_Jmeno.7z**. (Případně lze
+použít prostý zip, například na Macu). Takto vytvořený archív nahrajte na Google Drive do složky
+[Úkol 03](https://drive.google.com/drive/folders/1nr2UqFKZnQynCUy2GkDz42tnNiKRq-8p).
 
-Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním v galerii na Facebooku.
+Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním
+[v galerii na Facebooku](https://www.facebook.com/media/set/?set=oa.851669468374649&type=3).
 
 Pokud byste chtěli odevzdat revizi úkolu (např. po opravě), zabalte ji a nahrajte ji na stejný Google Drive znovu, jen
 tentokrát se jménem **Ukol03-Vase_Jmeno-verze2.7z**.
