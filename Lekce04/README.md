@@ -102,11 +102,12 @@ Pomocí metod výše nakreslete následující obrázky (zmrzlinu, sněhuláka a
 
 ### Odevzdání domácího úkolu
 
-Domácí úkol (složku s projektem **90-Turtle-Parametrizovane_metody**) zabalte pomocí 7-Zipu pod jménem
-**Ukol03-Vase_Jmeno.7z**. (Případně lze použít prostý zip, například na Macu). Takto vytvořený archív nahrajte na Google
-Drive do složky Ukol03.
+Domácí úkol (složku s projektem) zabalte pomocí 7-Zipu pod jménem **Ukol04-Vase_Jmeno.7z**. (Případně lze použít prostý
+zip, například na Macu). Takto vytvořený archív nahrajte na Google Drive do složky
+[Úkol 04](https://drive.google.com/drive/folders/1XdADaMAXS0mQr57dRM2K-_WAfndxVh08).
 
-Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním v galerii na Facebooku.
+Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním
+[v galerii na Facebooku](https://www.facebook.com/media/set/?set=oa.856011117940484&type=3).
 
 Pokud byste chtěli odevzdat revizi úkolu (např. po opravě), zabalte ji a nahrajte ji na stejný Google Drive znovu, jen
-tentokrát se jménem **Ukol03-Vase_Jmeno-verze2.7z**.
+tentokrát se jménem **Ukol04-Vase_Jmeno-verze2.7z**.
