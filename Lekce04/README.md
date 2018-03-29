@@ -94,11 +94,11 @@ parametrů, tak výstupu.
 
 Pomocí metod výše nakreslete následující obrázky (zmrzlinu, sněhuláka a mašinku).
 
-<img src="ukol03-zmrzlina.svg" width="100" />
+<img src="../Lekce03/ukol03-zmrzlina.svg" width="100" />
 
-<img src="ukol03-snehulak.svg" height="300" />
+<img src="../Lekce03/ukol03-snehulak.svg" height="300" />
 
-<img src="ukol03-lokomotiva.svg" height="150" />
+<img src="../Lekce03/ukol03-lokomotiva.svg" height="150" />
 
 ### Odevzdání domácího úkolu
 
