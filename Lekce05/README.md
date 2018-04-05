@@ -94,9 +94,11 @@ Navrhněte GUI pro další aplikace.
 ### Odevzdání domácího úkolu
 
 Domácí úkol (složku s projekty) zabalte pomocí 7-Zipu pod jménem **Ukol05-Vase_Jmeno.7z**. (Případně lze použít prostý
-zip, například na Macu). Takto vytvořený archív nahrajte na Google Drive do složky Ukol05.
+zip, například na Macu). Takto vytvořený archív nahrajte na Google Drive do složky
+[Úkol 05](https://drive.google.com/drive/folders/1DbAKC2Rjjubd8qjnzhSOHLo8Dl4yMnHu).
 
-Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním v galerii na Facebooku.
+Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním
+[v galerii na Facebooku](https://www.facebook.com/media/set/?set=oa.859663720908557&type=3).
 
 Pokud byste chtěli odevzdat revizi úkolu (např. po opravě), zabalte ji a nahrajte ji na stejný Google Drive znovu, jen
 tentokrát se jménem **Ukol05-Vase_Jmeno-verze2.7z**.
