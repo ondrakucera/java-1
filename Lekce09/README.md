@@ -17,7 +17,7 @@ Ping Pong a Bludiště
 Na YouTube se můžete podívat na [záznam z lekce](https://www.youtube.com/watch?v=QybpXg5PAXo),
 případně si prohlédnout [celý playlist](https://www.youtube.com/playlist?list=PLUVJxzuCt9AROpKl3Hu-DvdgQV-xHaoQY).
 
-Úkol 09 - Ping Pong a Bludiště
+Úkol 08 - Ping Pong a Bludiště
 ------------------------------
 
 Cílem domácího úkolu je dokončit aplikace z hodiny.
@@ -63,10 +63,12 @@ Pár tipů:
 
 ### Odevzdání domácího úkolu
 
-Domácí úkol (složky s projekty) zabalte pomocí 7-Zipu pod jménem **Ukol09-Vase_Jmeno.7z**. (Případně lze použít prostý
-zip, například na Macu). Takto vytvořený archív nahrajte na Google Drive do složky Ukol09.
+Domácí úkol (složky s projekty) zabalte pomocí 7-Zipu pod jménem **Ukol08-Vase_Jmeno.7z**. (Případně lze použít prostý
+zip, například na Macu). Takto vytvořený archív nahrajte na Google Drive do složky
+[Úkol 08](https://drive.google.com/drive/folders/1aM6dyiDmDTlszFUyfwKyBzxUkVM2okMa).
 
-Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním v galerii na Facebooku.
+Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním
+[v galerii na Facebooku](https://www.facebook.com/media/set/?set=oa.885480644993531&type=3).
 
 Pokud byste chtěli odevzdat revizi úkolu (např. po opravě), zabalte ji a nahrajte ji na stejný Google Drive znovu, jen
-tentokrát se jménem **Ukol09-Vase_Jmeno-verze2.7z**.
+tentokrát se jménem **Ukol08-Vase_Jmeno-verze2.7z**.
