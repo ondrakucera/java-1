@@ -33,16 +33,15 @@ Termíny jednotlivých lekcí
 
 Kurz probíhá jednou týdně, vždy v úterý od 18.00 do 20.30, a to v následujících datech:
 
-* 6\. 3\. 2018
-* 13\. 3\. 2018
-* 20\. 3\. 2018
+* 8\. 9\. 2018
+* 18\. 9\. 2018
+* 25\. 9\. 2018
 * 27\. 3\. 2018
-* 3\. 4\. 2018
-* 10\. 4\. 2018
-* 17\. 4\. 2018
-* 24\. 4\. 2018
-* 15\. 5\. 2018
-* 22\. 5\. 2018
+* 2\. 10\. 2018
+* 9\. 10\. 2018
+* 16\. 10\. 2018
+* 23\. 10\. 2018
+* 30\. 10\. 2018
 
 Je opravdu důležité, abyste mohly přijít na všechny hodiny.
 
@@ -55,5 +54,5 @@ Google Drive
 ------------
 
 Některé další informace se nacházejí [ve sdílené složce na Google
-Drive](https://drive.google.com/drive/folders/1xyZ5XgiMXZw1ogwpyeeSBoVNcL1fcvJl). Do této složky budete rovněž nahrávat
+Drive](https://drive.google.com/drive/folders/180LMR_1lClNoLIlS3InyeNK8gSUNbJlk). Do této složky budete rovněž nahrávat
 svá řešení domácích úkolů.
