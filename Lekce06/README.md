@@ -121,10 +121,10 @@ Tato část je nepovinná. Opravdu ji dělejte, jen pokud vás to bude bavit. :-
 
 Domácí úkol (složky s projekty) zabalte pomocí 7-Zipu pod jménem **Ukol06-Vase_Jmeno.7z**. (Případně lze použít prostý
 zip, například na Macu). Takto vytvořený archív nahrajte na Google Drive do složky
-[Úkol 06](https://drive.google.com/drive/folders/1gXIJ63Kq40fJuRvAWYbzXWGL9_0bygJ3).
+[Úkol 06](https://drive.google.com/drive/folders/1LJU3yGF193h0Qys9jDYW3jpIHoD3h75-).
 
 Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním
-[v galerii na Facebooku](https://www.facebook.com/media/set/?set=oa.863224383885824&type=3).
+[v galerii na Facebooku](https://www.facebook.com/media/set/?set=oa.242796523059595&type=3).
 
 Pokud byste chtěli odevzdat revizi úkolu (např. po opravě), zabalte ji a nahrajte ji na stejný Google Drive znovu, jen
 tentokrát se jménem **Ukol06-Vase_Jmeno-verze2.7z**.
