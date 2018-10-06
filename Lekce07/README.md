@@ -222,13 +222,13 @@ Zde je kód, který se uživatele zeptá na jméno souboru klasických ukládac�
 
 Domácí úkol (složky s projekty) zabalte pomocí 7-Zipu pod jménem **Ukol07-Vase_Jmeno.7z**. (Případně lze použít prostý
 zip, například na Macu). Takto vytvořený archív nahrajte na Google Drive do složky
-[Úkol 07](https://drive.google.com/drive/folders/1B-dlJaOhpmjGTee9MX71-qlQ_eAElkyf).
+[Úkol 07](https://drive.google.com/drive/u/0/folders/1r19pfXNYhjyqkqFlRk4u4-pE5Unxzk6q).
 
 Vaši novou mandalu (soubor PNG) nahrejte pod vaším jménem (**Vase_Jmeno_mandala.png**) do složky
-[Úkol 07/Mandaly](https://drive.google.com/drive/folders/1lEXMjRI4Ll9kjwPtz1Dqa9JWoN4bNgqD) na Google Drive.
+[Úkol 07/Mandaly](https://drive.google.com/drive/u/0/folders/1I_ufKlvXujPj7KYy2UMHfPy2QbnBLyxo) na Google Drive.
 
 Vytvořte snímek obrazovky spuštěného programu a pochlubte se s ním
-[v galerii na Facebooku](https://www.facebook.com/media/set/?set=oa.867092823498980&type=3).
+[v galerii na Facebooku](https://www.facebook.com/media/set/?set=oa.245150369490877&type=3).
 
 Pokud byste chtěli odevzdat revizi úkolu (např. po opravě), zabalte ji a nahrajte ji na stejný Google Drive znovu, jen
 tentokrát se jménem **Ukol07-Vase_Jmeno-verze2.7z**.
