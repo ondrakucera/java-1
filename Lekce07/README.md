@@ -121,7 +121,7 @@ parametrem null:
     nahrajObrazek(null);
 
 V tom případě se nahraje zabudovaná [mandala.png](ukol07-mandala.png), kterou musíte vložit do projektu do složky
-**src/com/example/kresleni** vedle **HlavniOkno.java**. Pokud budete chtít nahrát jiný soubor, předáte ho jako parametr.
+**src/main/resources**. Pokud budete chtít nahrát jiný soubor, předáte ho jako parametr.
 
     File soubor;
     soubor = new File("C:\\Users\\Kamil\\Documents\\mandala2.png");
@@ -132,7 +132,7 @@ Celé znění metody je zde:
     private void nahrajObrazek(File soubor) {
         if (soubor == null) {
             try {
-                obrazek = ImageIO.read(getClass().getResourceAsStream("mandala.png"));
+                obrazek = ImageIO.read(getClass().getResourceAsStream("/mandala.png"));
             } catch (IOException ex) {
                 throw new ApplicationPublicException(ex, "Nepodařilo se nahrát zabudovaný obrázek mandaly");
             }
