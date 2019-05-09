@@ -30,7 +30,7 @@ Disk
   |
   +-- long vyuziteMisto;
   |
-  +-- public void vypisInfo()
+  +-- public String toString()
 ~~~~
 
 ~~~~
@@ -38,7 +38,7 @@ Pamet
   |
   +-- long kapacita;
   |
-  +-- public void vypisInfo()
+  +-- public String toString()
 ~~~~
 
 ~~~~
@@ -48,7 +48,7 @@ Procesor
   |
   +-- long rychlost;
   |
-  +-- public void vypisInfo()
+  +-- public String toString()
 ~~~~
 
 ~~~~
@@ -62,14 +62,25 @@ Pocitac
   |
   +-- Disk pevnyDisk;
   |
-  +-- public void vypisInfo()
+  +-- public String toString()
   |
   +-- public void zapniSe()
   |
   +-- public void vypniSe()
 ~~~~
 
-Do každé třídy naprogramujte `vypisInfo()`,
+*Poznámka: na hodině jsme si pouze okrajově řekli, jakou hodnotu budou obsahovat ty vlastnosti objektu, které na žádnou
+konkrétní hodnotu sami nenastavíme. Vyzkoušeli jsme si, že vlastnosti typu `int` budou v takovém případě nastaveny na
+hodnotu `0`. Podobně i vlastnosti typu `double` budou nastaveny na hodnotu `0.0`. Možná už méně zřejmě platí, že
+vlastnosti typu `boolean` budou nastaveny na hodnotu `false`. Jak je to ale s vlastnostmi objektových typů (řetězce,
+barvy, atd.)? Ty budou nastaveny na speciální hodnotu `null`, která vyjadřuje právě to, že dané vlastnosti ještě není
+přiřazen žádný konkrétní objekt (žádný konkrétní řetězec, žádná konkrétní barva apod.). Hodnota `null` se v některých
+situacích chová speciálním způsobem (to ještě v budoucnosti uvidíme), ale v řadě jiných se s ní dá pracovat jako s
+každou jinou, například je možné porovnat hodnotu nějaké vlastnosti vůči ní a tím právě zjistit, zda do této vlastnosti
+již bylo přiřazeno něco konkrétního, nebo ještě ne. Můžeme tedy psát podmínky jako `if (vlastnost == null)`, případně
+naopak `if (vlastnost != null)`, což se nám bude hned vzápětí hodit.*
+
+Do každé třídy naprogramujte `toString()`,
 podobně, jak jsme to dělali v hodině.
 
 Do třídy `Pocitac` navíc naprogramujte metodu `zapniSe()` a `vypniSe()`,
@@ -88,7 +99,7 @@ metody `vypniSe()` se ignoruje.
 
 V metodě `main(...)` ve `SpousteciTrida` vytvořte
 model **svého** počítače a vyzkoušejte, že vám fungují správně metody
-`vypisInfo()` u všech tříd a že počítač jde zapnout,
+`toString()` u všech tříd a že počítač jde zapnout,
 jen pokud je správně sestavený.
 
 Příklad metody `main(...)` Kamilova počítače:
@@ -97,7 +108,7 @@ Příklad metody `main(...)` Kamilova počítače:
 public static void main(String[] args) {
     Pocitac kamiluvLaptop;
     kamiluvLaptop = new Pocitac();
-    kamiluvLaptop.vypisInfo();
+    System.out.println(kamiluvLaptop);
     kamiluvLaptop.zapniSe();      // Vypise chybu, protoze pocitac
                                     // nema vsechny povinne soucasti
 
@@ -115,11 +126,11 @@ public static void main(String[] args) {
     kamiluvLaptop.ram = kamilovaPamet;
     kamiluvLaptop.pevnyDisk = kamiluvDisk;
 
-    kamiluvLaptop.vypisInfo();
+    System.out.println(kamiluvLaptop);
 
     kamiluvLaptop.zapniSe();
     kamiluvLaptop.zapniSe();      // Vypise chybu, protoze pocitac uz bezi
-    kamiluvLaptop.vypisInfo();
+    System.out.println(kamiluvLaptop);
     kamiluvLaptop.vypniSe();
 
     kamiluvLaptop.vypniSe();      // Nevypise chybu, ale nic neprovede,
