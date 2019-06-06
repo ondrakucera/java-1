@@ -109,9 +109,6 @@ Zkuste, jak se projeví rozdíl mezi vzorem
 
 Až to budete mít hotové, založte ještě jeden projekt
 a vytvořte vylepšenou verzi Farmářky.
-Tato část **je nepovinná**,
-ale doporučuji ji udělat, protože teprve tady je
-alespoň trochu programování.
 
 Máte-li v chovu alespoň 1 samici a 1 samce, můžete čekat,
 že se vám chov do zimy rozšíří, a měly byste tedy vypěstovat víc potravy.
