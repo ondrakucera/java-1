@@ -14,37 +14,34 @@ Cílem domácího úkolu je naprogramovat desktopovou aplikaci pro vymalováván
  Založte novou okenní aplikaci, která bude podobná Kreslení z hodiny. Nahrajte do labelu obrázek mandaly a naprogramujte
  do ní stejnou funkcionalitu jako jsem měl já na konci hodiny. Inspirujte se videem z lekce.
 
-Obrázek se dá nahrát pomocí následujícího kódu.
+Obrázek se dá nahrát pomocí následující metody.
 
 ~~~Java
-    try {
-        // Bud jde vytvorit prazdny obrazek
-        // obrazek = new BufferedImage(1920, 1080, BufferedImage.TYPE_4BYTE_ABGR);
-
-        // Nebo nahrat existujici
-        File soubor = new File("C:\\Java-Training\\Projects\\Java1\\Lekce11\\obrazek1.png");
-        obrazek = ImageIO.read(soubor);
+    private void nahrajObrazek(File soubor) {
+        try {
+            obrazek = ImageIO.read(soubor);
+        } catch (IOException ex) {
+            throw new ApplicationPublicException(ex, "Nepodařilo se nahrát obrázek mandaly ze souboru " + soubor.getAbsolutePath());
+        }
         labObrazek.setIcon(new ImageIcon(obrazek));
-    } catch (IOException e) {
-        throw new ApplicationPublicException(ex, "Nepodařilo se nahrát obrázek mandaly ze souboru " + soubor.getAbsolutePath());
+        labObrazek.setMinimumSize(new Dimension(obrazek.getWidth(), obrazek.getHeight()));
+        pack();
+        setMinimumSize(getSize());
     }
 ~~~
 
-Zpětné lomítko ve zdrojovém textu Javy musí být vždycky zdvojeno, ale chápe se jako jedno. Je to proto, protože jedno
-zpětné lomítko by se chápalo jako escape sekvence pro psaní speciálních znaků.
-
-Všimněte si uvedení plné cesty k souboru. Pokud byste chtěli uvést cestu k souboru relativní (vůči složce projektu),
-prostě jen napište:
+Z metody obsluhující otevření okna (na hodině **priOtevreniOkna**) ji zavolejte například takto:
 
 ~~~Java
-new File("obrazek1.png");
+        File soubor = new File("obrazek1.png");
+        nahrajObrazek(soubor);
 ~~~
 
-Soubor **obrazek1.png** musíte tedy zkopírovat do kořene složky
-projektu. Např. **C:\Java-Training\Projects\Java1\Lekce11\Ukol10-Mandala\obrazek1.png**.
+Tím říkáme, že se má použít soubor **obrazek1.png** a že ten se nachází ve složce projektu (tedy té, kde se nachází
+mimo jiné soubor pom.xml); například to může být složka **C:\Java-Training\Projects\Java1\Lekce11\Ukol10-Mandala**.
 
 V materiálech k lekci jsem vám dodal zdrojový text metody na vyplnění **BufferedImage** (a pár dalších, pomocných
-metod). Jedná se o soubor **Vyplnovani.txt**.
+metod). Jedná se o soubor [Vyplnovani.txt](Vyplnovani.txt).
 
 *Poznámka:* Dejte pozor, aby **labObrazek** měl nastavené zarovnání **horizontalAlignment** na **LEFT** a
 **verticalAlignment** na **TOP**. Tedy aby obrázek mandaly byl vlevo nahoře. Jinak nebudou souřadnice **X** a **Y** z
@@ -65,8 +62,9 @@ vyplňovat touto barvou.
 
 Připravte si vlastní sadu barev k vyplňování. Můžete použít [Adobe KULER](https://color.adobe.com/).
 
-V odevzdávárně ve složce Ukol10 je nahrané moje řešení i se zdrojovými texty. Můžete ho využít, když nebudete vědět kudy
-kam. Ale pokud to půjde bez něj, bude to výrazně lepší.
+Zatímco v programu na hodině mělo okno mimo jiné vlastnost **stetec**, kterému jsme průběžně nastavovali různou barvu,
+tady vůbec tuto vlastnost nepoužijeme (a tedy jí ani nebudeme nastavovat barvu). Místo toho bude lepší vytvořit
+například vlastnost **zvolenaBarva** a měnit přímo tuto (a tu pak předávat metodě **vyplnObrazek**).
 
 ### Část 3 - Příprava vlastní mandaly
 
@@ -93,8 +91,31 @@ Program Mandal jakkoliv vylepšete. Napadá mě mnoho způsobů, co by ještě a
 
 #### Například nahrávání a ukládání obrázků
 
-Bylo by fajn přidat klasické menu a do něj možnost uložit a nahrát libovolný obrázek. Inspirujte se mým vzorovým řešením
-v odevzdávárně.
+Bylo by fajn přidat klasické menu a do něj možnost uložit a nahrát libovolný obrázek. Inspirovat se můžete vzorovým
+řešením.
+
+Metoda obsluhující položku menu pro otevření obrázku může vypadat takto:
+
+~~~Java
+    private void priStiskuMenuOtevrit(ActionEvent e) {
+        JFileChooser dialog;
+        if (otevrenySoubor == null) {
+            dialog = new JFileChooser(".");
+        } else {
+            dialog = new JFileChooser(otevrenySoubor.getParentFile());
+        }
+        dialog.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        dialog.setMultiSelectionEnabled(false);
+        dialog.addChoosableFileFilter(new FileNameExtensionFilter("Obrázky (*.png)", "png"));
+        int vysledek = dialog.showOpenDialog(this);
+        if (vysledek != JFileChooser.APPROVE_OPTION) {
+            return;
+        }
+
+        otevrenySoubor = dialog.getSelectedFile();
+        nahrajObrazek(otevrenySoubor);
+    }
+~~~
 
 Zde najdete metodu na uložení obrázku:
 
